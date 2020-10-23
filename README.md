@@ -1,6 +1,7 @@
 # Simple ToDo Website
 
 This is a ToDo Website.  
+This is a simple CRUD to-do task website.
 This is a **React** project hosted with the help of **Git**.
 
 ## Quick Start
@@ -18,7 +19,6 @@ npm start
 ### These are the list of packages used in
 
 - react
-- react-router-dom
 - antd
 - redux
 - redux-thunk
