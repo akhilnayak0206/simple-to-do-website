@@ -21,6 +21,7 @@ npm start
 - react
 - antd
 - redux
+- react-redux
 - redux-thunk
 
 ## Reproduce the project
