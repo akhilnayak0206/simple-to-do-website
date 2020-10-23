@@ -1,38 +1,102 @@
+@import '~antd/dist/antd.css';
+
 .App {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header h1 {
+  margin-bottom: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.textBoxDiv {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 10px;
+  justify-content: flex-start;
+}
+.textBoxDiv h4 {
+  font-weight: normal;
+  margin-top: 0px;
+}
+.groupByDiv {
+  flex: 25%;
+  flex-direction: column;
+  /* padding: 0px 50px; */
+}
+.searchBarDiv {
+  flex: 75%;
+  flex-direction: column;
+}
+
+.searchBarDiv h4 {
+  padding-left: 10px;
+}
+
+.taskListMainDiv {
+  display: flex;
+  padding: 50px 10px;
+}
+
+.addTaskModal p {
+  margin-bottom: 0px;
+}
+
+.addTaskModalSingleRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.dueDateAddModal {
+  flex: 50%;
+  flex-direction: column;
+}
+.priorityAddModal {
+  flex: 50%;
+  flex-direction: column;
+}
+
+table,
+th,
+td {
+  border: 1px solid rgb(181, 181, 181);
+  padding: 10px;
+}
+
+.borderRight0 {
+  border-right: 0px;
+}
+.borderLeft0 {
+  border-left: 0px;
+}
+.border0 {
+  border: 0px;
+}
+.textAlignCenter {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flexCorner {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
-
-.App-link {
-  color: #61dafb;
+.flexEvenly {
+  display: flex;
+  justify-content: space-evenly;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fontBold {
+  font-weight: bold;
+}
+.textUnderline {
+  text-decoration: underline;
 }

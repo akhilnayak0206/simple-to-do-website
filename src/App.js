@@ -1,26 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Provider } from 'react-redux';
+
+//Redux
+import store from './store';
+
+// styles
 import './App.css';
 
-function App() {
+//Components
+import GroupSearchDiv from './Components/GroupSearchDiv';
+import TaskListMain from './Components/TaskListMain';
+import AddTaskButton from './Components/AddTaskButton';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <div className='App'>
+        <div className='header'>
+          <h1>ToDo App</h1>
+          <AddTaskButton />
+        </div>
+        <div className='textBoxDiv'>
+          <GroupSearchDiv />
+        </div>
+        <div className='taskListMainDiv'>
+          <TaskListMain />
+        </div>
+      </div>
+    </Provider>
   );
-}
+};
 
 export default App;
